@@ -65,6 +65,3 @@ Deployment
 
 License
 MIT License
-
-
-bhi bana deta/deti 👍
