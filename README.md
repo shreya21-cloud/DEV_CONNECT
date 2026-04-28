@@ -36,8 +36,6 @@ Database: MongoDB
 Project Structure
 developer-blog/├── backend/│   ├── controllers/│   ├── models/│   ├── routes/│   └── config/│├── frontend/│   ├── components/│   ├── pages/│   └── assets/│├── .env├── .gitignore└── README.md
 
-Installation
-git clone https://github.com/your-username/developer-blog.gitcd developer-blognpm installcd frontendnpm install
 
 Environment Variables
 Create a .env file:
