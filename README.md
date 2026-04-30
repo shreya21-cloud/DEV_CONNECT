@@ -97,7 +97,7 @@ developer-blog/
 │   └── App.js
 │
 └── README.md
----## ⚙️ Installation### 1. Clone repo```bashgit clone https://github.com/your-username/developer-blog.git
+---## ⚙️ Installation### 1. Clone repo```bashgit clone https://github.com/shreya21-cloud/developer-blog.git
 2. Backend setup
 cd backendnpm installnpm run dev
 3. Frontend setup
