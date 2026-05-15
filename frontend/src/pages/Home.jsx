@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 const Home = () => {
@@ -23,17 +24,17 @@ const Home = () => {
 
   return (
     <div className="animate-fade-in">
-      <h1 className="mt-2 text-center" style={{ fontSize: '3rem', marginTop: '3rem' }}>
-        Welcome to your <span style={{ color: 'var(--accent-primary)' }}>Developer Space</span>
+      <h1 className="hero-title text-center">
+        Welcome to your <span className="text-accent">Developer Space</span>
       </h1>
-      <p className="text-center" style={{ color: 'var(--text-secondary)', marginBottom: '3rem', fontSize: '1.2rem' }}>
+      <p className="hero-subtitle text-center">
         Discover the latest thoughts, concepts, and tutorials from the community.
       </p>
 
       {posts.length === 0 ? (
         <div className="glass-panel text-center delay-100 animate-fade-in">
-          <h3 style={{ marginBottom: '1rem' }}>No posts found</h3>
-          <p style={{ color: 'var(--text-secondary)' }}>Be the first one to share your thoughts!</p>
+          <h3 className="mb-1">No posts found</h3>
+          <p className="text-secondary">Be the first one to share your thoughts!</p>
         </div>
       ) : (
         <div className="posts-grid">
@@ -54,8 +55,8 @@ const Home = () => {
                   ))}
                 </div>
               )}
-              <div style={{ marginTop: 'auto' }}>
-                <a href={`/posts/${post._id}`} className="read-more">Read Full Article</a>
+              <div className="mt-auto">
+                <Link to={`/posts/${post._id}`} className="read-more">Read Full Article</Link>
               </div>
             </div>
           ))}

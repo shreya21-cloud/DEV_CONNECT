@@ -20,8 +20,8 @@ const Navbar = () => {
         <div className="nav-links">
           {user ? (
             <>
-              <Link to="/create-post" className="btn btn-primary" style={{ marginRight: '1rem' }}>Write a Post</Link>
-              <span style={{ color: 'var(--text-secondary)' }}>Hello, {user.name}</span>
+              <Link to="/create-post" className="btn btn-primary mr-1">Write a Post</Link>
+              <span className="text-secondary mr-1">Hello, {user.name}</span>
               <button onClick={handleLogout} className="btn btn-secondary">Logout</button>
             </>
           ) : (
